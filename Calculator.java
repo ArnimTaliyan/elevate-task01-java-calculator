@@ -15,6 +15,22 @@ public class Calculator {
         System.out.println("Subtraction of " + number1 + " and " + number2 + " is: "+ result);
     }
 
+    //Public method to perform multiplication
+    public static void multiplication (double number1, double number2) {
+        double result = number1 * number2;
+        System.out.println("Multiplication  of " + number1 + " and " + number2 + " is: "+ result);
+    }
+
+    //Public method to perform division
+    public static void division(double number1, double number2) {
+        if (number2 == 0) {
+            System.out.println("Cannot divide by zero! Try again.");
+        } else {
+            double result = number1 / number2;
+            System.out.println("Division  of " + number1 + " and " + number2 + " is: "+ result);
+        }
+    }
+
     public static void main(String[] args) {
         //Initialising scanner to take user input
         Scanner input = new Scanner(System.in);
@@ -42,8 +58,8 @@ public class Calculator {
             switch (operation) {
                 case '+' -> addition(number1, number2);
                 case '-' -> subtraction(number1, number2);
-//                case '*' -> multiplication(number1, number2);
-//                case '/' -> division(number1, number2);
+                case '*' -> multiplication(number1, number2);
+                case '/' -> division(number1, number2);
                 default -> System.out.println("Invalid Operator! Try Again");
             }
 
