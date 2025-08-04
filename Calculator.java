@@ -18,7 +18,7 @@ public class Calculator {
     //Public method to perform multiplication
     public static void multiplication (double number1, double number2) {
         double result = number1 * number2;
-        System.out.println("Multiplication  of " + number1 + " and " + number2 + " is: "+ result);
+        System.out.println("Multiplication of " + number1 + " and " + number2 + " is: "+ result);
         System.out.println();
     }
 
