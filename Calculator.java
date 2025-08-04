@@ -48,15 +48,32 @@ public class Calculator {
         while (start.equalsIgnoreCase("y")) {
             //User input for first number
             System.out.print("Enter first number: ");
+
+            //Validate input
+            while (!input.hasNextDouble()) {
+                System.out.print("Invalid input! Please enter a valid number: ");
+                input.next(); // clear the invalid input
+            }
             number1 = input.nextDouble();
 
             //User input for second number
             System.out.print("Enter Second number: ");
+
+            //Validate input
+            while (!input.hasNextDouble()) {
+                System.out.print("Invalid input! Please enter a valid number: ");
+                input.next(); // clear the invalid input
+            }
             number2 = input.nextDouble();
 
-            //User input for operation to perform
-            System.out.print("Enter operation you need to perform (+, -, *, /):");
+            System.out.print("Enter operation you need to perform (+, -, *, /): ");
             operation = input.next().charAt(0);
+
+            //Validate input
+            while (operation != '+' && operation != '-' && operation != '*' && operation != '/') {
+                System.out.print("Invalid operator! Please enter one of (+, -, *, /): ");
+                operation = input.next().charAt(0);
+            }
 
             //Switch statement to perform operation based on user input
             switch (operation) {
@@ -68,8 +85,14 @@ public class Calculator {
             }
 
             //It helps to re-run or quit the program
-            System.out.print("Do you wish to continue? (y/n):");
+            System.out.print("Do you wish to continue? (y/n): ");
             start = input.next();
+
+            //Validate input
+            while (!start.equalsIgnoreCase("y") && !start.equalsIgnoreCase("n")) {
+                System.out.print("Invalid choice. Please enter y or n: ");
+                start = input.next();
+            }
             System.out.println();
         }
         System.out.print("Thank you for using calculator.");
