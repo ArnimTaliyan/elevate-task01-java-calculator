@@ -5,27 +5,32 @@ public class Calculator {
     public static void addition(double number1, double number2) {
         double result = number1 + number2;
         System.out.println("Addition of " + number1 + " and " + number2 + " is: "+ result);
+        System.out.println();
     }
 
     //Public method to perform subtraction
     public static void subtraction(double number1, double number2) {
         double result = number1 - number2;
         System.out.println("Subtraction of " + number1 + " and " + number2 + " is: "+ result);
+        System.out.println();
     }
 
     //Public method to perform multiplication
     public static void multiplication (double number1, double number2) {
         double result = number1 * number2;
         System.out.println("Multiplication  of " + number1 + " and " + number2 + " is: "+ result);
+        System.out.println();
     }
 
     //Public method to perform division
     public static void division(double number1, double number2) {
         if (number2 == 0) {
             System.out.println("Cannot divide by zero! Try again.");
+            System.out.println();
         } else {
             double result = number1 / number2;
             System.out.println("Division  of " + number1 + " and " + number2 + " is: "+ result);
+            System.out.println();
         }
     }
 
@@ -49,7 +54,7 @@ public class Calculator {
             number2 = input.nextDouble();
 
             //User input for operation to perform
-            System.out.print("Enter operation you need to perform (+, -, *, /): ");
+            System.out.print("Enter operation you need to perform (+, -, *, /):");
             operation = input.next().charAt(0);
 
             //Switch statement to perform operation based on user input
@@ -62,8 +67,9 @@ public class Calculator {
             }
 
             //It helps to re-run or quit the program
-            System.out.print("Do you wish to continue? (y/n): ");
+            System.out.print("Do you wish to continue? (y/n):");
             start = input.next();
+            System.out.println();
         }
         System.out.print("Thank you for using calculator.");
 
