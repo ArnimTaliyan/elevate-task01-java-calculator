@@ -52,4 +52,4 @@ This task helped reinforce Java fundamentals, improved problem-solving skills, a
 ---
 
 ## End Note
-This was completed as part of a Java Developer Internship Task at Elevate Labs, focused on building real-world Java development experience from scratch.
+This was completed as part of a Java Developer Internship Task at Elevate Labs, focused on building real-world Java application development experience from scratch.

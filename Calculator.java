@@ -44,6 +44,7 @@ public class Calculator {
         double number2;
         char operation;
 
+        //While loop to continuously take output or exit program
         while (start.equalsIgnoreCase("y")) {
             //User input for first number
             System.out.print("Enter first number: ");
