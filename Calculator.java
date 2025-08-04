@@ -57,7 +57,7 @@ public class Calculator {
             number1 = input.nextDouble();
 
             //User input for second number
-            System.out.print("Enter Second number: ");
+            System.out.print("Enter second number: ");
 
             //Validate input
             while (!input.hasNextDouble()) {
